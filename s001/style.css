@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+
+:root {
+    --background:#025159;
+    --header:#3E848C;
+    --cor1:#7AB8BF;
+    --footer:#C2EDF2;
+    --headerfont:#A67458;
+
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+    --font-destaque:'Bebas neue', sans-serif;
+    --font-android:'Android', sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color:#02505944;
+   /* background-image: url('zambezia.png');
+    background-size: cover;
+    background-repeat: no no-repeat;
+    background-position: center;*/ /*Caso queira que o fundo do site seje uma imagem*/    
+}
+
+header {
+    color: white;
+    background-color: var(--header);
+    background-image: linear-gradient(to bottom, var(--background),var(--cor1));
+    text-align: center;
+    padding-top: 40px;
+    min-height: 150px;
+}
+
+header > h1 {
+    color: var(--background);
+    font-family: var(--font-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.292);
+}
+
+header p {
+    color: var(--footer);
+    font-family: var(--font-destaque);
+    font-size: 1.25em;
+    max-height: 500px;
+    width: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.368);
+
+}
+
+nav {
+    background-color: var(--cor1);
+    padding: 10px;
+    box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.325);
+  
+}
+
+nav > a {
+    color: var(--footer);
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--footer);
+    color: var(--cor1);
+}
+
+main {
+    background-color: white;
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-right: 20px;
+    padding: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    
+    text-shadow: 0px 7px 8px rgba(0, 0, 0, 0.36);
+}
+
+main h1 {
+    color: var(--cor1);
+    padding: 10px;
+    font-family: var(--font-padrao);
+}
+
+main  h1 > p {
+    text-indent: 50px;
+}  
+
+main p {
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+main h2 {
+    color: var(--header);
+}
+
+img {
+    width: 25%;
+    height: 70%;
+}
+
+main img {
+    max-width: 350px; /*para que a imagem se ajuste mesmo no telefone*/
+    /*display: block; 
+     margin:auto;*/ /*Esses 2 comandos juntos fariam a imagem se centralizar*/
+    
+}
+
+section {
+    background-color: var(--footer);
+    margin: 0px 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+section > h3 {
+    background-color: var(--header);
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px ;
+    
+}
+
+section > aside {
+    text-align: justify;
+    padding: 7px; 
+    font-size: 1em;
+}
+
+aside {
+    margin: 10px;
+    
+}
+
+main > span > a {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+/*aside.turismo > a {
+    color: var(--background);
+    text-decoration: none;
+}*/
+
+span.turismo > a {
+    color: var(--background);
+    text-decoration: none;
+}
+/*aside.turismo {
+    
+    text-align: center;
+    padding: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+}*/
+
+span.turismo {
+    background-color: #02535c49;
+    padding: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px 0px 5px 0px;
+    background-image: linear-gradient(to right, var(--header), transparent);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*aside > a:hover {
+    color: var(--headerfont);
+}*/
+
+span > a:hover {
+    color: var(--headerfont);
+    
+}
+    
+
+footer {
+    background-color: var(--footer);
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 10px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.35);
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--background);
+
+}
